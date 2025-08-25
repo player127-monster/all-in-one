@@ -35,7 +35,7 @@ const Products: React.FC = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('/api/products');
+      const response = await fetch('https://backend4-phi.vercel.app/api/products');
       const data = await response.json();
       
       if (data.success) {
