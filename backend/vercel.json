@@ -16,6 +16,6 @@
     "MONGODB_URI": "mongodb+srv://allinone1:allinone1@merncrud.bu1nvjm.mongodb.net/ecommerce?retryWrites=true&w=majority&appName=mernCRUD",
     "JWT_SECRET": "f66db4ec116f3",
     "GOOGLE_CLIENT_ID": "381904959357-3go2djsdqe0gevn5j5mk57m8t82ko4kj.apps.googleusercontent.com",
-    "FRONTEND_URL": "https://all-in-one-rosy.vercel.app/"
+    "FRONTEND_URL": "https://all-in-one-rosy.vercel.app"
   }
 }
