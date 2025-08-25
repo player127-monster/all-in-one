@@ -118,13 +118,7 @@ const AdminLogin: React.FC = () => {
             </button>
           </div>
 
-          <div className="bg-yellow-50 border border-yellow-200 rounded-md p-4">
-            <h3 className="text-sm font-medium text-yellow-800 mb-2">Demo Credentials</h3>
-            <div className="text-xs text-yellow-700 space-y-1">
-              <p><strong>Username:</strong> admin1 | <strong>Password:</strong> admin1</p>
-              <p><strong>Username:</strong> admin2 | <strong>Password:</strong> admin2</p>
-            </div>
-          </div>
+          
         </form>
       </div>
     </div>
