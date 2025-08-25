@@ -1,0 +1,28 @@
+{
+  "name": "shophub-mern-ecommerce",
+  "version": "1.0.0",
+  "description": "Full-stack MERN e-commerce application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "mongodb",
+    "express",
+    "ecommerce",
+    "vercel",
+    "typescript"
+  ],
+  "author": "ShopHub Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
