@@ -53,6 +53,9 @@ router.post('/login', async (req, res) => {
       isAdmin: true
     });
 
+    console.log(token);
+    
+
     res.json({
       success: true,
       data: {

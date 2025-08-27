@@ -27,7 +27,7 @@ const AdminMessages: React.FC = () => {
 
   const fetchMessages = async () => {
     try {
-      const response = await fetch('/api/messages/admin/all', {
+      const response = await fetch('https://backend4-phi.vercel.app/api/messages/admin/all', {
         headers: { 'Authorization': `Bearer ${token}` },
       });
       const data = await response.json();
@@ -45,7 +45,7 @@ const AdminMessages: React.FC = () => {
 
   const handleMarkAsRead = async (messageId: string, read: boolean) => {
     try {
-      const response = await fetch(`/api/messages/${messageId}/read`, {
+      const response = await fetch(`https://backend4-phi.vercel.app/api/messages/${messageId}/read`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ const AdminMessages: React.FC = () => {
     }
 
     try {
-      const response = await fetch(`/api/messages/${messageId}`, {
+      const response = await fetch(`https://backend4-phi.vercel.app/api/messages/${messageId}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` },
       });

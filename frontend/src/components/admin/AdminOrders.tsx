@@ -38,7 +38,7 @@ const AdminOrders: React.FC = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await fetch('/api/orders/admin/all', {
+      const response = await fetch('https://backend4-phi.vercel.app/api/orders/admin/all', {
         headers: { 'Authorization': `Bearer ${token}` },
       });
       const data = await response.json();
@@ -56,7 +56,7 @@ const AdminOrders: React.FC = () => {
 
   const handleStatusUpdate = async (orderId: string, newStatus: string) => {
     try {
-      const response = await fetch(`/api/orders/${orderId}/status`, {
+      const response = await fetch(`https://backend4-phi.vercel.app/api/orders/${orderId}/status`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

@@ -45,7 +45,7 @@ const AdminProducts: React.FC = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('/api/products/admin/all', {
+      const response = await fetch('https://backend4-phi.vercel.app/api/products/admin/all', {
         headers: { 'Authorization': `Bearer ${token}` },
       });
       const data = await response.json();
@@ -71,8 +71,8 @@ const AdminProducts: React.FC = () => {
     
     try {
       const url = editingProduct 
-        ? `/api/products/${editingProduct._id}`
-        : '/api/products';
+        ? `https://backend4-phi.vercel.app/api/products/${editingProduct._id}`
+        : 'https://backend4-phi.vercel.app/api/products';
       
       const method = editingProduct ? 'PUT' : 'POST';
       
@@ -123,7 +123,7 @@ const AdminProducts: React.FC = () => {
     }
 
     try {
-      const response = await fetch(`/api/products/${id}`, {
+      const response = await fetch(`https://backend4-phi.vercel.app/api/products/${id}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` },
       });
@@ -144,7 +144,7 @@ const AdminProducts: React.FC = () => {
 
   const handleToggleActive = async (product: Product) => {
     try {
-      const response = await fetch(`/api/products/${product._id}`, {
+      const response = await fetch(`https://backend4-phi.vercel.app/api/products/${product._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

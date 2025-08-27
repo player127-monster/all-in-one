@@ -30,16 +30,16 @@ const AdminOverview: React.FC = () => {
   const fetchStats = async () => {
     try {
       const [productsRes, ordersRes, reviewsRes, messagesRes] = await Promise.all([
-        fetch('/api/products/admin/all', {
+        fetch('https://backend4-phi.vercel.app/api/products/admin/all', {
           headers: { 'Authorization': `Bearer ${token}` },
         }),
-        fetch('/api/orders/admin/all', {
+        fetch('https://backend4-phi.vercel.app/api/orders/admin/all', {
           headers: { 'Authorization': `Bearer ${token}` },
         }),
-        fetch('/api/reviews/admin/all', {
+        fetch('https://backend4-phi.vercel.app/api/reviews/admin/all', {
           headers: { 'Authorization': `Bearer ${token}` },
         }),
-        fetch('/api/messages/admin/all', {
+        fetch('https://backend4-phi.vercel.app/api/messages/admin/all', {
           headers: { 'Authorization': `Bearer ${token}` },
         }),
       ]);

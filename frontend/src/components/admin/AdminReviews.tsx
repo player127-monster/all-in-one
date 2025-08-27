@@ -25,7 +25,7 @@ const AdminReviews: React.FC = () => {
 
   const fetchReviews = async () => {
     try {
-      const response = await fetch('/api/reviews/admin/all', {
+      const response = await fetch('https://backend4-phi.vercel.app/api/reviews/admin/all', {
         headers: { 'Authorization': `Bearer ${token}` },
       });
       const data = await response.json();
@@ -43,7 +43,7 @@ const AdminReviews: React.FC = () => {
 
   const handleApprovalToggle = async (reviewId: string, currentApproval: boolean) => {
     try {
-      const response = await fetch(`/api/reviews/${reviewId}/approve`, {
+      const response = await fetch(`https://backend4-phi.vercel.app/api/reviews/${reviewId}/approve`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ const AdminReviews: React.FC = () => {
     }
 
     try {
-      const response = await fetch(`/api/reviews/${reviewId}`, {
+      const response = await fetch(`https://backend4-phi.vercel.app/api/reviews/${reviewId}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` },
       });
