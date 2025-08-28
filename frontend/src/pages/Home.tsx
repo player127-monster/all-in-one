@@ -24,11 +24,13 @@ const Home: React.FC = () => {
 
   const fetchFeaturedProducts = async () => {
     try {
-      const response = await fetch('/api/products');
+      const response = await fetch('https://backend4-phi.vercel.app/api/products');
       const data = await response.json();
+      console.log(data);
+      
       
       if (data.success) {
-        setFeaturedProducts(data.data.slice(0, 8)); // Show first 8 products
+        await setFeaturedProducts(data.data.slice(0, 8)); // Show first 8 products
       }
     } catch (error) {
       console.error('Error fetching featured products:', error);

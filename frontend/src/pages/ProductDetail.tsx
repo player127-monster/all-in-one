@@ -47,7 +47,7 @@ const ProductDetail: React.FC = () => {
 
   const fetchProduct = async () => {
     try {
-      const response = await fetch(`/api/products/${id}`);
+      const response = await fetch(`https://backend4-phi.vercel.app/api/products/${id}`);
       const data = await response.json();
       
       if (data.success) {
@@ -65,7 +65,7 @@ const ProductDetail: React.FC = () => {
 
   const fetchReviews = async () => {
     try {
-      const response = await fetch(`/api/reviews/product/${id}`);
+      const response = await fetch(`https://backend4-phi.vercel.app/api/reviews/product/${id}`);
       const data = await response.json();
       
       if (data.success) {
@@ -78,7 +78,7 @@ const ProductDetail: React.FC = () => {
 
   const fetchAvailableOrders = async () => {
     try {
-      const response = await fetch('/api/orders/user', {
+      const response = await fetch('https://backend4-phi.vercel.app/api/orders/user', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -137,7 +137,7 @@ const ProductDetail: React.FC = () => {
     }
 
     try {
-      const response = await fetch('/api/reviews', {
+      const response = await fetch('https://backend4-phi.vercel.app/api/reviews', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

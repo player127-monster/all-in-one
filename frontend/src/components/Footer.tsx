@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Store className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">ShopHub</span>
+              <span className="text-xl font-bold">AllinOne</span>
             </div>
             <p className="text-gray-300 mb-4">
               Your one-stop destination for quality products at affordable prices.
@@ -54,15 +54,15 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">support@shophub.com</span>
+                <span className="text-gray-300">support@allinone.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+94 767959624</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">123 Commerce St, City, State</span>
+                <span className="text-gray-300">172a Colombo SriLanka</span>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © {new Date().getFullYear()} ShopHub. All rights reserved.
+            © {new Date().getFullYear()} AllinOne. All rights reserved.
           </p>
         </div>
       </div>

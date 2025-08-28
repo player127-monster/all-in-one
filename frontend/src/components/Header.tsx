@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
             <Store className="h-8 w-8" />
-            <span>ShopHub</span>
+            <span>AllinOne</span>
           </Link>
 
           {/* Desktop Navigation */}

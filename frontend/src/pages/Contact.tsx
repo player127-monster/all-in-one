@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/messages', {
+      const response = await fetch('https://backend4-phi.vercel.app/api/messages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Email Us</h3>
-                  <p className="text-gray-600">support@shophub.com</p>
+                  <p className="text-gray-600">support@allinone.com</p>
                   <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Call Us</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+94 767959624</p>
                   <p className="text-sm text-gray-500">Mon - Fri: 9AM - 6PM EST</p>
                 </div>
               </div>
@@ -111,8 +111,8 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Visit Us</h3>
-                  <p className="text-gray-600">123 Commerce Street</p>
-                  <p className="text-gray-600">New York, NY 10001</p>
+                  <p className="text-gray-600">172a Colombo </p>
+                  <p className="text-gray-600">SriLanka</p>
                   <p className="text-sm text-gray-500">Monday - Friday: 9AM - 5PM</p>
                 </div>
               </div>
