@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star, ShoppingCart, Truck, Shield, Headphones } from 'lucide-react';
 import { useCart } from '../context/CartContext';
-import toast from 'react-hot-toast';
+import { Toaster, toast } from 'react-hot-toast';
+
 
 interface Product {
   _id: string;
@@ -58,6 +59,8 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
+      <Toaster position="bottom-center" />
+
       <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 text-white">
         <div className="container mx-auto px-4 py-20">
           <div className="max-w-3xl mx-auto text-center">
