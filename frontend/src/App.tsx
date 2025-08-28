@@ -22,6 +22,7 @@ function App() {
   return (
     <AuthProvider>
       <CartProvider>
+        <Toaster position="bottom-center" />
         <Router>
           <div className="min-h-screen bg-gray-50 flex flex-col">
             <Header />

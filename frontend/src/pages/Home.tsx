@@ -59,7 +59,7 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <Toaster position="bottom-center" />
+      
 
       <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 text-white">
         <div className="container mx-auto px-4 py-20">
