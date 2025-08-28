@@ -21,8 +21,8 @@ import { Toaster } from 'react-hot-toast';
 function App() {
   return (
     <AuthProvider>
+      <Toaster position="bottom-center" />
       <CartProvider>
-        <Toaster position="bottom-center" />
         <Router>
           <div className="min-h-screen bg-gray-50 flex flex-col">
             <Header />
